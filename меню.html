@@ -1,0 +1,145 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Меню</title>
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a1b29; /* Тёмный фон */
+            margin: 0;
+            padding: 0;
+            color: #d1dde5; /* Светлый текст */
+        }
+
+        /* Стили для меню */
+        #menu {
+            background-color: #172d3e; /* Тёмно-синий фон для меню */
+            border-radius: 10px; /* Закругленные углы */
+            padding: 20px; /* Отступы внутри меню */
+            width: 80%; /* Ширина меню */
+            margin: 20px auto; /* Центрирование меню */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Легкая тень */
+        }
+
+        #menu h2 {
+            color: #a9ff5f; /* Светло-зеленый цвет заголовка */
+            text-align: center; /* Центрирование заголовка */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+
+        #menu ul {
+            list-style-type: none; /* Убираем маркеры списка */
+            padding: 0; /* Убираем внутренние отступы */
+        }
+
+        #menu li {
+            margin-bottom: 10px; /* Отступы между пунктами */
+        }
+
+        #menu a {
+            text-decoration: none; /* Убираем подчеркивание */
+            color: #a9ff5f; /* Цвет ссылок */
+            font-weight: bold; /* Жирный шрифт для ссылок */
+            padding: 10px; /* Отступы вокруг текста ссылок */
+            display: block; /* Каждый элемент на новой строке */
+            border-radius: 4px; /* Закругленные углы ссылок */
+            transition: background-color 0.3s; /* Плавный переход цвета фона */
+        }
+
+        #menu a:hover {
+            background-color: #1e3a56; /* Цвет фона при наведении */
+        }
+
+        .submenu {
+            display: none; /* Скрыть подменю по умолчанию */
+            margin-top: 10px; /* Отступ сверху для подменю */
+        }
+
+        .submenu a {
+            display: block; /* Каждый элемент подменю на новой строке */
+            margin-left: 20px; /* Отступ слева для подменю */
+            color: #d1dde5; /* Цвет текста подменю */
+        }
+
+        .submenu a:hover {
+            background-color: #1e3a56; /* Цвет фона при наведении для подменю */
+        }
+    </style>
+    <script>
+        function toggleMenu(submenuId) {
+            const submenu = document.getElementById(submenuId);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <div id="menu">
+        <h2>Меню разделов</h2>
+        <ul>
+            <li>
+                <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D1%80%D0%B0%D0%B2.html" target="content">Главная</a>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu('historySub')">Историческая справка</a>
+                <div id="historySub" class="submenu">
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B4%D1%80%D0%B5%D0%B2.html" target="content">Древнерусская кухня</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BF%D0%B5%D1%82%D0%B5%D1%80.html" target="content">Петербургская кухня</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2.html" target="content">Петровская эпоха</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu('soupsSub')">Первое</a>
+                <div id="soupsSub" class="submenu">
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BE%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B0.html" target="content">Окрошка</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D1%89%D0%B8.html" target="content">Щи</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D1%81%D0%BE%D0%BB%D1%8F%D0%BD%D0%BA%D0%B0.html" target="content">Солянка</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D1%80%D0%B0%D1%81%D1%81%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA.html" target="content">Рассольник</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D1%83%D1%85%D0%B0.html" target="content">Уха</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D1%88%D1%83%D1%80%D0%BF%D0%B0.html" target="content">Шурпа</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D1%85%D0%B0%D1%80%D1%87%D0%BE.html" target="content">Харчо</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%84.html" target="content">Картофельный</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B3%D0%B0%D1%81%D0%BF%D0%B0%D1%87.html" target="content">Гаспачо</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BA%D1%83%D0%BB%D0%B5%D1%88.html" target="content">Кулеш</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu('mainCoursesSub')">Второе</a>
+                <div id="mainCoursesSub" class="submenu">
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D0%BE%D1%82%D0%B1%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F.html" target="content">Отбивная</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D0%BF%D1%85%D0%B5%D0%BB%D0%BC%D0%B5%D0%BD%D0%B8.html" target="content">Пельмени</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D0%B3%D1%83%D0%BB%D1%8F.html" target="content">Гуляш</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D1%88%D0%B0%D1%88%D0%BB%D1%8B%D0%BA.html" target="content">Шашлык</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D1%81%D1%82%D0%B5%D0%B9%D0%BA.html" target="content">Стейки</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D0%BC%D0%B0%D0%BA%D0%B0%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D1%8B.html" target="content">Макароны</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D1%88%D0%BD%D0%B8%D1%86%D0%B5%D0%BB%D1%8C.html" target="content">Шницель</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D0%BA%D0%B0%D1%80%D1%80%D0%B8.html" target="content">Карри</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D1%8F%D0%B8%D1%87%D0%BA%D0%B0.html" target="content">Яичница</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5/%D0%B3%D1%80%D0%B5%D1%87%D0%BA%D0%B0.html" target="content">Гречка</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu('thirdSub')">Напитки</a>
+                <div id="thirdSub" class="submenu">
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D1%82.html" target="content">Компот</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D0%BB%D0%B8%D0%BC%D0%BE%D0%BD%D0%B0%D0%B4.html" target="content">Лимонад</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D0%BA%D0%B2%D0%B0%D1%81.html" target="content">Квас</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D0%BC%D0%BE%D1%80%D1%81.html" target="content">Морс</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D1%81%D0%B0%D0%BC%D0%BE%D0%B3%D0%BE%D0%BD.html" target="content">Самогон</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D1%8D%D0%BB%D1%8C.html" target="content">Эль</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D1%81%D0%BC%D1%83%D0%B7%D0%B8.html" target="content">Смузи</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9%D0%B4%D0%BE%D0%B6%D0%B4%D1%8C.html" target="content">Золотое молоко</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%BD%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B8/%D0%BE%D1%80%D0%B0%D0%BD%D0%B4%D0%B6.html" target="content">Оранжад</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleMenu('dessertsSub')">Десерты</a>
+                <div id="dessertsSub" class="submenu">
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B4%D0%B5%D1%81%D0%B5%D1%80%D1%82%D1%8B/%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D0%BA.html" target="content">Медовик</a>
+                    <a href="file:///C:/Users/%D0%96%D0%94%D0%A3%20100%20%D0%A2%D0%93%20%D0%9D%D0%90%20%D0%9A%D0%90%D0%A1%D0%9F%D0%98/Desktop/%D0%BF%D0%BE%D1%8D%D1%82%D0%B0%D0%BF%D0%BA%D0%B0/%D0%BF%D0%BE%D0%B4%D0%BC%D0%B5%D0%BD%D1%8E/%D0%B4%D0%B5%D1%81%D0%B5%D1%80%D1%82%D1%8B/%D0%BD%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD.html" target="content">Наполеон</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
