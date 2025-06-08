@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепт соуса для свинины</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0a1b29; /* Тёмный фон */
+            color: #d1dde5; /* Светлый текст */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .ingredients {
+            width: 45%;
+            background-color: #172d3e; /* Тёмно-синий фон */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .ingredients li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: bold; /* Полужирный текст */
+            color: #d1dde5; /* Светлый текст для ингредиентов */
+        }
+        .image {
+            width: 45%;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps {
+            margin-top: 20px;
+            background-color: #173438; /* Темный зеленый фон для шагов */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .steps ol {
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #d1dde5; /* Светлый текст для шагов */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden; /* Обрезаем углы */
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            color: #d1dde5; /* Светлый текст */
+        }
+        thead th {
+            background-color: #6ea34e; /* Цвет шапки */
+            font-weight: bold;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #1f3e4e; /* Чередующийся фон строк */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #2a4b5f; /* Чередующийся фон строк */
+        }
+        tfoot td {
+            background-color: #6ea34e; /* Цвет ячеек НДС */
+            font-weight: bold;
+        }
+        table, th, td {
+            border: 1px solid #a9ff5f;
+        }
+        .table-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #6ea34e; /* Цвет шапки */
+            color: #d1dde5; /* Светлый текст */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ингредиенты</h2>
+            <ul>
+                <li>Сметана - 150 г</li>
+                <li>Горчица - 10 г (2 ч. л.)</li>
+                <li>Перец чёрный молотый - 2.5 г (0.5 ч. л.)</li>
+                <li>Паприка молотая - 1.25 г (0.25 ч. л.)</li>
+                <li>Чеснок - 2 зубчика</li>
+                <li>Кориандр молотый - 1.25 г (0.25 ч. л.)</li>
+                <li>Лавровый лист молотый - 2 щепотки</li>
+                <li>Имбирь молотый - 50 г (по вкусу)</li>
+                <li>Сок гранатовый - 100 г</li>
+                <li>Сок лимона - 5 г (1 ч. л.)</li>
+                <li>Соль - 50 г (по вкусу)</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="C:\Users\ЖДУ 100 ТГ НА КАСПИ\Desktop\поэтапка\Картинки\шаш.jpg" alt="Соус для свинины">
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>Шаги приготовления</h2>
+        <ol>
+            <li>Порезать свинину на кусочки.</li>
+            <li>Возьмите глубокую посуду, добавьте сметану и натёртый чеснок.</li>
+            <li>Налейте гранатовый сок и сок лимона.</li>
+            <li>Добавьте все специи, хорошо перемешайте.</li>
+            <li>Добавьте соль по вкусу и перемешайте.</li>
+        </ol>
+    </div>
+
+    <!-- Таблица с расчетами -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" class="table-title">Калькуляционная карта</th>
+            </tr>
+            <tr>
+                <th>Наименование продукта</th>
+                <th>Норма</th>
+                <th>Цена</th>
+                <th>Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сметана</td>
+                <td>150</td>
+                <td>300</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Горчица</td>
+                <td>10</td>
+                <td>500</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Перец чёрный молотый</td>
+                <td>2.5</td>
+                <td>120</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Паприка молотая</td>
+                <td>1.25</td>
+                <td>800</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Чеснок</td>
+                <td>10</td>
+                <td>200</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Кориандр молотый</td>
+                <td>1.25</td>
+                <td>100</td>
+                <td>1.25</td>
+            </tr>
+            <tr>
+                <td>Лавровый лист молотый</td>
+                <td>1</td>
+                <td>150</td>
+                <td>1.5</td>
+            </tr>
+            <tr>
+                <td>Имбирь молотый</td>
+                <td>50</td>
+                <td>800</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Сок гранатовый</td>
+                <td>100</td>
+                <td>250</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Сок лимона</td>
+                <td>5</td>
+                <td>100</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Соль</td>
+                <td>50</td>
+                <td>50</td>
+                <td>2.5</td>
+            </tr>
+        </tbody>
+  <tfoot>
+  <tr>
+  <td>131*12%</td>
+  <td colspan="2">16</td>
+  <td rowspan="2">278</td>
+  </tr>
+  <tr>
+  <td>131*200%</td>
+  <td colspan="2">262</td>
+  </tr>
+  </tfoot>
+  </table>
+ </body>
+ </html>

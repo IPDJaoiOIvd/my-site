@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самогон</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0a1b29; /* Тёмный фон */
+            color: #d1dde5; /* Светлый текст */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .ingredients {
+            width: 45%;
+            background-color: #172d3e; /* Тёмно-синий фон */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .ingredients li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: bold; /* Полужирный текст */
+            color: #d1dde5; /* Светлый текст для ингредиентов */
+        }
+        .image {
+            width: 45%;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps {
+            margin-top: 20px;
+            background-color: #173438; /* Темный зеленый фон для шагов */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Изменено на 100% */
+        }
+        .steps h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .steps ol {
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #d1dde5; /* Светлый текст для шагов */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden; /* Обрезаем углы */
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            color: #d1dde5; /* Светлый текст */
+        }
+        thead th {
+            background-color: #6ea34e; /* Цвет шапки */
+            font-weight: bold;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #1f3e4e; /* Чередующийся фон строк */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #2a4b5f; /* Чередующийся фон строк */
+        }
+        tfoot td {
+            background-color: #6ea34e; /* Цвет ячеек НДС */
+            font-weight: bold;
+        }
+        table, th, td {
+            border: 1px solid #a9ff5f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ингредиенты</h2>
+            <ul>
+                <li>Сахар – 6 кг</li>
+                <li>Дрожжи (сухие) – 100 г</li>
+                <li>Вода – 24 литра</li>
+                <li>Лимонная кислота – 25 г</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="C:\Users\ЖДУ 100 ТГ НА КАСПИ\Desktop\поэтапка\Картинки\самгони.jpg" width="650" height="250" alt="Самогон">
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>Шаги приготовления</h2>
+        <ol>
+            <li>Подготовьте сироп: вскипятите 3 литра воды, добавьте сахар и лимонную кислоту. Варите 1 час.</li>
+            <li>Остудите сироп до 30-35°C.</li>
+            <li>Смешайте сироп с 20 литрами воды.</li>
+            <li>Добавьте активированные дрожжи в смесь и перемешайте.</li>
+            <li>Оставьте брагу для брожения на 5-10 дней в теплом месте.</li>
+            <li>Процедите брагу и перегоните через самогонный аппарат.</li>
+            <li>Очистите самогон активированным углем или молоком.</li>
+            <li>Перегоните второй раз для улучшения качества.</li>
+            <li>Разбавьте самогон до крепости 40-45% и дайте напитку «отдохнуть».</li>
+        </ol>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" class="table-title">Калькуляционная карта</th>
+            </tr>
+            <tr>
+                <th>Наименование продуктов</th>
+                <th>Норма</th>
+                <th>Цена</th>
+                <th>Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сахар</td>
+                <td>6000</td>
+                <td>500</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Дрожжи</td>
+                <td>100</td>
+                <td>120</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Вода</td>
+                <td>2</td>
+                <td>100</td>
+                <td>0,5</td>
+            </tr>
+            <tr>
+                <td>Лимонная кислота</td>
+                <td>25</td>
+                <td>500</td>
+                <td>12,5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>325*12%</td>
+                <td colspan="2">39</td> <!-- Объединяем ячейки Норма и Цена -->
+                <td rowspan="2">699</td> <!-- Объединяем ячейку Суммы -->
+            </tr>
+            <tr>
+                <td>325*200%</td>
+                <td colspan="2">650</td> <!-- Объединяем ячейки Норма и Цена -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

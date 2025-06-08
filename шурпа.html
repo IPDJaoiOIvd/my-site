@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блюдо с бараниной</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0a1b29; /* Тёмный фон */
+            color: #d1dde5; /* Светлый текст */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .ingredients {
+            width: 45%;
+            background-color: #172d3e; /* Тёмно-синий фон */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .ingredients li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: bold; /* Полужирный текст */
+            color: #d1dde5; /* Светлый текст для ингредиентов */
+        }
+        .image {
+            width: 45%;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps {
+            margin-top: 20px;
+            background-color: #173438; /* Темный зеленый фон для шагов */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .steps ol {
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #d1dde5; /* Светлый текст для шагов */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden; /* Обрезаем углы */
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            color: #d1dde5; /* Светлый текст */
+        }
+        thead th {
+            background-color: #6ea34e; /* Цвет шапки */
+            font-weight: bold;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #1f3e4e; /* Чередующийся фон строк */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #2a4b5f; /* Чередующийся фон строк */
+        }
+        tfoot td {
+            background-color: #6ea34e; /* Цвет ячеек НДС */
+            font-weight: bold;
+        }
+        table, th, td {
+            border: 1px solid #a9ff5f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ингредиенты</h2>
+            <ul>
+                <li>Мясо баранины - 500 г (с косточками)</li>
+                <li>Картофель - 4 шт.</li>
+                <li>Морковь - 2 шт.</li>
+                <li>Болгарский перец - 2 шт.</li>
+                <li>Острый перец чили - 2-3 шт.</li>
+                <li>Лук репчатый - 1-2 шт.</li>
+                <li>Горох нут - 300 г (замоченный)</li>
+                <li>Чеснок - 3 зубчика</li>
+                <li>Зира - 1 ч.л.</li>
+                <li>Кориандр - 0,5 ч.л.</li>
+                <li>Красный молотый перец - по вкусу</li>
+                <li>Помидор - 2 шт.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="C:\Users\ЖДУ 100 ТГ НА КАСПИ\Desktop\поэтапка\Картинки\шурпа.jpg" alt="Блюдо с бараниной">
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>Шаги приготовления</h2>
+        <ol>
+            <li>Вымойте мясо, залейте холодной водой и варите 15 минут.</li>
+            <li>Добавьте замоченный горох и чили, варите еще час.</li>
+            <li>Добавьте нарезанный лук, посолите и варите до мягкости мяса.</li>
+            <li>Морковь нарежьте крупно, добавьте за 30 минут до готовности, картофель — за 20 минут.</li>
+            <li>Добавьте помидоры и чеснок за 5 минут до конца варки, приправьте специями и зеленью.</li>
+        </ol>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" class="table-title">Калькуляционная карта</th>
+            </tr>
+            <tr>
+                <th>Наименование продукта</th>
+                <th>Норма</th>
+                <th>Цена</th>
+                <th>Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Мясо баранины</td>
+                <td>500</td>
+                <td>1000</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Картофель</td>
+                <td>300</td>
+                <td>30</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Морковь</td>
+                <td>50</td>
+                <td>20</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Болгарский перец</td>
+                <td>100</td>
+                <td>60</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Острый перец чили</td>
+                <td>2</td>
+                <td>50</td>
+                <td>0,1</td>
+            </tr>
+            <tr>
+                <td>Лук репчатый</td>
+                <td>50</td>
+                <td>15</td>
+                <td>0,7</td>
+            </tr>
+            <tr>
+                <td>Горох нут</td>
+                <td>300</td>
+                <td>800</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Чеснок</td>
+                <td>3</td>
+                <td>70</td>
+                <td>0,2</td>
+            </tr>
+            <tr>
+                <td>Зира</td>
+                <td>1</td>
+                <td>900</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Кориандр</td>
+                <td>0.5</td>
+                <td>1000</td>
+                <td>0,5</td>
+            </tr>
+            <tr>
+                <td>Красный молотый перец</td>
+                <td>5</td>
+                <td>900</td>
+                <td>4,5</td>
+            </tr>
+            <tr>
+                <td>Помидор</td>
+                <td>80</td>
+                <td>200</td>
+                <td>16</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>1043*12%</td>
+                <td colspan="2">125</td> <!-- Объединяем ячейки Норма и Цена -->
+                <td rowspan="2">2211</td> <!-- Объединяем ячейку Суммы -->
+            </tr>
+            <tr>
+                <td>1043*200%</td>
+                <td colspan="2">2086</td> <!-- Объединяем ячейки Норма и Цена -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

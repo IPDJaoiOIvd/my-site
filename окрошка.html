@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окрошка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #0a1b29; /* Тёмный фон */
+            color: #d1dde5; /* Светлый текст */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .ingredients {
+            width: 45%;
+            background-color: #172d3e; /* Тёмно-синий фон */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .ingredients li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: bold; /* Полужирный текст */
+            color: #d1dde5; /* Светлый текст для ингредиентов */
+        }
+        .image {
+            width: 45%;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps {
+            margin-top: 20px;
+            background-color: #173438; /* Темный зеленый фон для шагов */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .steps h2 {
+            text-align: center;
+            color: #a9ff5f; /* Светло-зеленый цвет */
+        }
+        .steps ol {
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #d1dde5; /* Светлый текст для шагов */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden; /* Обрезаем углы */
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            color: #d1dde5; /* Светлый текст */
+        }
+        thead th {
+            background-color: #6ea34e; /* Цвет шапки */
+            font-weight: bold;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #1f3e4e; /* Чередующийся фон строк */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #2a4b5f; /* Чередующийся фон строк */
+        }
+        tfoot td {
+            background-color: #6ea34e; /* Цвет ячеек НДС */
+            font-weight: bold;
+        }
+        table, th, td {
+            border: 1px solid #a9ff5f;
+        }
+        .small-cell {
+            width: 100px;
+        }
+        .table-title {
+            background-color: #6ea34e; /* Цвет фона заголовка */
+            color: #d1dde5; /* Цвет текста */
+            font-size: 1.5em; /* Размер шрифта */
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ingredients">
+            <h2>Ингредиенты</h2>
+            <ul>
+                <li>Колбаса – 300 г</li>
+                <li>Яйцо – 4 шт.</li>
+                <li>Огурец – 3 шт.</li>
+                <li>Картофель мелкий – 5-7 шт.</li>
+                <li>Укроп, петрушка – по 2-3 веточки</li>
+                <li>Сметана – 3-4 ст.л.</li>
+                <li>Квас белый – 2 л</li>
+                <li>Соль, черный молотый перец – по вкусу</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="C:\Users\ЖДУ 100 ТГ НА КАСПИ\Desktop\поэтапка\Картинки\окрошка.jfif" alt="Окрошка">
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>Шаги приготовления</h2>
+        <ol>
+            <li>Нарежьте отваренные яйца кубиками или соломкой.</li>
+            <li>Нарежьте огурцы тонкой соломкой или натрите на крупной терке.</li>
+            <li>Отварите картофель в «мундире», охладите, очистите и нарежьте.</li>
+            <li>Нарежьте ветчину или мясо соломкой.</li>
+            <li>Измельчите зелень по вкусу.</li>
+            <li>Соедините все ингредиенты в глубокой миске, приправьте солью и перцем, добавьте сметану и залейте квасом.</li>
+        </ol>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4" class="table-title">Калькуляционная карта</th>
+            </tr>
+            <tr>
+                <th>Наименование продукта</th>
+                <th>Норма</th>
+                <th>Цена</th>
+                <th>Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Колбаса</td>
+                <td>130</td>
+                <td>1500</td>
+                <td>195</td>
+            </tr>
+            <tr>
+                <td>Яйцо</td>
+                <td>45</td>
+                <td>75</td>
+                <td>3,3</td>
+            </tr>
+            <tr>
+                <td>Огурец</td>
+                <td>70</td>
+                <td>250</td>
+                <td>17,5</td>
+            </tr>
+            <tr>
+                <td>Картофель</td>
+                <td>80</td>
+                <td>192</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Укроп</td>
+                <td>1</td>
+                <td>170</td>
+                <td>0,1</td>
+            </tr>
+            <tr>
+                <td>Петрушка</td>
+                <td>1</td>
+                <td>180</td>
+                <td>0,1</td>
+            </tr>
+            <tr>
+                <td>Сметана</td>
+                <td>3</td>
+                <td>600</td>
+                <td>1,8</td>
+            </tr>
+            <tr>
+                <td>Квас белый</td>
+                <td>1.5</td>
+                <td>1200</td>
+                <td>1,8</td>
+            </tr>
+            <tr>
+                <td>Соль</td>
+                <td>5</td>
+                <td>245</td>
+                <td>1,2</td>
+            </tr>
+            <tr>
+                <td>Перец молотый черный</td>
+                <td>5</td>
+                <td>870</td>
+                <td>4,3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>243,5*12%</td>
+                <td colspan="2" class="small-cell">29,22</td>
+                <td rowspan="2">516</td>
+            </tr>
+            <tr>
+                <td>243,5*200%</td>
+                <td colspan="2" class="small-cell">487</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
